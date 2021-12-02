@@ -1,7 +1,22 @@
 package temperatura;
+
+import java.util.Scanner;
+
 public class Temperatura {
+
     public static void main(String[] args) {
-        System.out.println("¡Bienvenido al programa de las temperaturas!");        
+
+        double temp;
+        Scanner leer = new Scanner(System.in);
+        System.out.println("¡Bienvenido al programa de las temperaturas!");
+        System.out.println("Por favor, introduzca la temperatura.");
+        temp=leer.nextDouble();
+        
+        if (temp>=0) {
+            System.out.println("La temperatura es positiva.");
+        } else {
+            System.out.println("La temperatura es negativa·");
+        }
     }
-    
+
 }
