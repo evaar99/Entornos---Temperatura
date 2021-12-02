@@ -7,10 +7,13 @@ public class Temperatura {
     public static void main(String[] args) {
 
         double temp;
+        int cantidad;
         Scanner leer = new Scanner(System.in);
         System.out.println("¡Bienvenido al programa de las temperaturas!");
+        System.out.println("¿Cuántas temperaturas desea introducir?");
+        cantidad = leer.nextInt();
 
-        for (int cont = 1; cont <= 5; cont++) {
+        for (int cont = 1; cont <= cantidad; cont++) {
             System.out.println("Por favor, introduzca la temperatura.");
             temp = leer.nextDouble();
 
