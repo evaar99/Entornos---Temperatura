@@ -20,6 +20,15 @@ public class Temperatura {
         for (int cont = 1; cont <= cantidad; cont++) {
             System.out.println("Por favor, introduzca la temperatura.");
             temp = leer.nextDouble();
+            //Indicaremos si la temperatura es positiva o negativa
+            if (temp < 0) {
+                System.out.println("La temperatura esta en negativo");
+
+            } else {
+                System.out.println("La temperatura esta en positivo");
+
+            }
+            
             if (temp > tempmay) {
                 tempmay = temp;
             }
