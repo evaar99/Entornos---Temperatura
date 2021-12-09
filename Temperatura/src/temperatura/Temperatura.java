@@ -7,7 +7,7 @@ public class Temperatura {
     public static void main(String[] args) {
 
         //Variable que nos va a guardar las temperaturas introducidas.
-        double temp , tempmen=1000, tempmay=-1000;
+        double temp , tempmen=0, tempmay=0;
         //Variable que indica la cantidad que quiere introducir.
         int cantidad;
         Scanner leer = new Scanner(System.in);
