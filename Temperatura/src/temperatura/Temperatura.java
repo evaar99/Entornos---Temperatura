@@ -8,8 +8,6 @@ public class Temperatura {
 
         //Variable que nos va a guardar las temperaturas introducidas.
         double temp, tempmay = 0, tempmen = 0;
-        //Variable para que solo se introduzca la primera temperatura.
-        int vuelta = 0;
         //Variable que indica la cantidad que quiere introducir.
         int cantidad;
         Scanner leer = new Scanner(System.in);
@@ -30,9 +28,10 @@ public class Temperatura {
                 System.out.println("La temperatura esta en positivo");
 
             }
-            if(cont==0){
+            if(cont==1){
                 tempmay = temp;
                 tempmen = temp;
+                
             }
             else{
                 if (temp > tempmay) {
